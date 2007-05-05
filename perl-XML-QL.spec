@@ -1,6 +1,6 @@
 %define module 	XML-QL
 %define version 0.07
-%define release %mkrel 8
+%define release %mkrel 9
 
 Summary:	%{module} perl module
 Name: 		perl-%{module}
