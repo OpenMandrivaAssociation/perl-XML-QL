@@ -1,15 +1,13 @@
 %define upstream_name 	 XML-QL
-%define upstream_version 0.07
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.07
+Release:	6
 
 Summary:	%{upstream_name} perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/XML-QL
-Source0:	https://cpan.metacpan.org/authors/id/M/MS/MSERGEANT/XML-QL-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MS/MSERGEANT/XML-QL-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ BuildArch:	noarch
 %{upstream_name} - An XML query language.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -38,9 +36,7 @@ make
 %changelog
 * Mon Aug 03 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.70.0-1mdv2010.0
 + Revision: 408244
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.07-11mdv2009.0
+- rebuild using %0.07 Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.07-11mdv2009.0
 + Revision: 242256
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
