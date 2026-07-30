@@ -2,7 +2,7 @@
 %define upstream_version 0.07
 Name:		perl-%{upstream_name}
 Version:	0.07
-Release:	1
+Release:	2
 
 Summary:	%{upstream_name} perl module
 License:	GPL+ or Artistic
@@ -20,7 +20,7 @@ BuildArch:	noarch
 %{upstream_name} - An XML query language.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n XML-QL-0.07
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
