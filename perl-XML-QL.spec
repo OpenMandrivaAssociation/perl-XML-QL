@@ -1,13 +1,14 @@
 %define upstream_name 	 XML-QL
+%define upstream_version 0.07
 Name:		perl-%{upstream_name}
 Version:	0.07
-Release:	6
+Release:	1
 
 Summary:	%{upstream_name} perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/XML-QL
-Source0:	https://cpan.metacpan.org/authors/id/M/MS/MSERGEANT/XML-QL-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MS/MSERGEANT/XML-QL-0.07.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -32,33 +33,4 @@ make
 %doc README MANIFEST Changes
 %{_mandir}/*/*
 %{perl_vendorlib}/XML
-
-%changelog
-* Mon Aug 03 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.70.0-1mdv2010.0
-+ Revision: 408244
-- rebuild using %0.07 Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.07-11mdv2009.0
-+ Revision: 242256
-- rebuild
-- kill re-definition of %%buildroot on Pixel's request
-
-  + Olivier Blin <oblin@mandriva.com>
-    - restore BuildRoot
-
-* Sun May 06 2007 Olivier Thauvin <nanardon@mandriva.org> 0.07-9mdv2008.0
-+ Revision: 23502
-- rebuild
-
-
-* Wed May 03 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.07-8mdk
-- Fix According to perl Policy
-	- BuildRequires
-	- URL
-	- Source URL
-- use mkrel
-
-* Wed Feb 25 2004 Olivier Thauvin <thauvin@aerov.jussieu.fr> 0.07-7mdk
-- Own dir
-
-* Tue May 27 2003 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.07-6mdk
-- rebuild for new auto{prov,req}
 
