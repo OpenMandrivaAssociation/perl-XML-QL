@@ -2,7 +2,7 @@
 %define upstream_version 0.07
 Name:		perl-%{upstream_name}
 Version:	0.07
-Release:	2
+Release:	3
 
 Summary:	%{upstream_name} perl module
 License:	GPL+ or Artistic
@@ -28,6 +28,9 @@ make
 
 %install
 %makeinstall_std
+
+%check
+make test || :
 
 %files
 %doc README MANIFEST Changes
